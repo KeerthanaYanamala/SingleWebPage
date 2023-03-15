@@ -1,0 +1,295 @@
+/* Box sizing rules */
+
+
+:root {
+    --bs-body-font-family: "Muli", sans-serif;
+    --sm: 37.5em;
+    --md: 48em;
+    --lg: 64em;
+    --xl: 75em;
+
+    --bs-body-text-align: left;
+
+    --font-big: 3.75rem;
+    --green: #5da93c;
+    --bg-color: #150a0a;
+    --bg-color2: #1D1D1D;
+    --bg-color3: #252525;
+    --light: #002838;
+    --spacing-button-md: 1em;
+    --spacing-button-sm: 0.5em;
+    --spacing-button-lg: 2em;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --header-height: 5rem;
+    --bg: rgb(255, 255, 255);
+    --bg2: #000000;
+    --text: rgb(15, 15, 15);
+    --text2: rgb(240, 240, 240);
+    --primary: rgb(22, 210, 247);
+    --spacing--sm: 0.2rem;
+
+
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core body defaults */
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    width: 100%;
+    text-rendering: optimizeSpeed;
+    line-height: 1.875;
+    background-color: var(--bg);
+    color: var(--bg2);
+    text-align: left;
+
+
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+
+
+}
+
+
+@media (prefers-color-scheme: light) {
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+
+
+.navbar {
+    height: var(--header-height);
+}
+
+
+section {
+    padding: 0 8%;
+}
+
+
+
+
+
+.entry-bg {
+    position: relative;
+    padding: 0;
+
+}
+
+.hero {
+    position: absolute;
+    min-height: 80vh;
+    width: 100%;
+    background-color: var(--bg2);
+    color: #ffffff;
+    padding: 0 8%;
+    z-index: 3;
+    top: 0;
+    opacity: 50%;
+}
+
+.text {
+    transform: translateY(50%);
+}
+
+
+
+
+
+.entry-bg img {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+
+.big-font {
+    font-size: var(--font-big);
+    font-weight: 900;
+
+
+}
+
+
+.entry-text-container {
+
+    text-align: left;
+    width: 60%;
+
+
+
+}
+
+.entry-bg .text {
+    width: 50%;
+}
+
+
+
+.page2 {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+
+/*cards*/
+
+
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+.card {
+    padding: 4rem;
+    border: 0;
+    width: 450px;
+}
+
+/*brands*/
+.brands {
+    min-height: 50vh;
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+}
+
+
+.brands .brand {
+    padding-top: 90px;
+
+
+}
+
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 50px;
+}
+
+
+/* tesitmonials */
+.testimonials {
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.testimonal-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.testimonal-cards h3 {
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* utility classes */
+
+
+
+.cta-button {
+    padding: var(--spacing-button-sm) var(--spacing-button-md);
+    border-radius: calc(var(--spacing--sm)/2);
+    color: var(--bg);
+    background-color: var(--bg2);
+
+}
+
+.dark-bg {
+    background-color: var(--bg2);
+    color: #f9f9f9;
+}
+
+
+
+footer {
+    text-align: center;
+}
+
+.blue-text {
+    background-color: #747bff;
+    color: #ffffff;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
